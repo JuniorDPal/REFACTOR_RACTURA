@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const invoices_1 = require("./invoices");
+const plays_1 = require("./plays");
+const InvoiceUtilities_1 = require("./InvoiceUtilities");
+const invoicesJSON = JSON.parse(invoices_1.invoices);
+const playsJSON = JSON.parse(plays_1.plays);
+// const invoicesJSON = async () => {await JSON.parse(invoices)};
+// const playsJSON = async () => {await JSON.parse(plays)};
+console.log(InvoiceUtilities_1.InvoiceUtilities.printInvoice(invoicesJSON, playsJSON));
